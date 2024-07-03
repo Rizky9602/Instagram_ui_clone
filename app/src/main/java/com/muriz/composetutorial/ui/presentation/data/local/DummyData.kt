@@ -6,6 +6,11 @@ import androidx.compose.material.icons.filled.AddBox
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.VideoLibrary
+import androidx.compose.material.icons.outlined.AccountCircle
+import androidx.compose.material.icons.outlined.AddBox
+import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.Search
+import androidx.compose.material.icons.outlined.VideoLibrary
 import com.muriz.composetutorial.R
 import com.muriz.composetutorial.ui.presentation.domain.model.Content
 import com.muriz.composetutorial.ui.presentation.domain.model.Post
@@ -95,32 +100,32 @@ object DummyData {
         NavigationItem(
             title = "Home",
             screen = Screen.Home,
-            selected = Icons.Default.Home,
-            unselected = Icons.Filled.Home
+            selected = Icons.Filled.Home,
+            unselected = Icons.Outlined.Home
         ),
         NavigationItem(
             title = "Search",
             screen = Screen.Search,
-            selected = Icons.Default.Search,
-            unselected = Icons.Filled.Search
+            selected = Icons.Filled.Search,
+            unselected = Icons.Outlined.Search
         ),
         NavigationItem(
             title = "add_Posting",
             screen = Screen.AddPosting,
-            selected = Icons.Default.AddBox,
-            unselected = Icons.Filled.AddBox
+            selected = Icons.Filled.AddBox,
+            unselected = Icons.Outlined.AddBox
         ),
         NavigationItem(
             title = "Reels",
             screen = Screen.Reels,
-            selected = Icons.Default.VideoLibrary,
-            unselected = Icons.Filled.VideoLibrary
+            selected = Icons.Filled.VideoLibrary,
+            unselected = Icons.Outlined.VideoLibrary
         ),
         NavigationItem(
             title = "Profile",
             screen = Screen.Profile,
-            selected = Icons.Default.AccountCircle,
-            unselected = Icons.Filled.AccountCircle
+            selected = Icons.Filled.AccountCircle,
+            unselected = Icons.Outlined.AccountCircle
         )
     )
 

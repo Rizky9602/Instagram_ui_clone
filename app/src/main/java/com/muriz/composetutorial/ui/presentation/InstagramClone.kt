@@ -10,7 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.muriz.composetutorial.ui.presentation.component.BottomBar
 import com.muriz.composetutorial.ui.presentation.navigation.Screen
-import com.muriz.composetutorial.ui.presentation.screen.HomeScreen
+import com.muriz.composetutorial.ui.presentation.Home.HomeScreen
 import com.muriz.composetutorial.ui.presentation.search.SearchScreen
 import com.muriz.composetutorial.ui.presentation.splash.SplashScreen
 

@@ -1,4 +1,4 @@
-package com.muriz.composetutorial.ui.presentation.screen.homeComponen
+package com.muriz.composetutorial.ui.presentation.Home.homeComponen
 
 import android.content.Context
 import androidx.compose.foundation.layout.Column

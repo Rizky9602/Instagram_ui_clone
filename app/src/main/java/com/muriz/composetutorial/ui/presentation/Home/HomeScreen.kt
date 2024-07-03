@@ -1,4 +1,4 @@
-package com.muriz.composetutorial.ui.presentation.screen
+package com.muriz.composetutorial.ui.presentation.Home
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -28,8 +28,8 @@ import com.muriz.composetutorial.R
 import com.muriz.composetutorial.ui.presentation.data.local.DummyData
 import com.muriz.composetutorial.ui.presentation.domain.model.Post
 import com.muriz.composetutorial.ui.presentation.domain.model.User
-import com.muriz.composetutorial.ui.presentation.screen.homeComponen.PostItem
-import com.muriz.composetutorial.ui.presentation.screen.homeComponen.StoryItem
+import com.muriz.composetutorial.ui.presentation.Home.homeComponen.PostItem
+import com.muriz.composetutorial.ui.presentation.Home.homeComponen.StoryItem
 
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier) {
