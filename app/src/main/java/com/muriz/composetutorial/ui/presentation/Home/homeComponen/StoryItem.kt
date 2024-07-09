@@ -51,12 +51,3 @@ fun StoryItem(
         Text(text = username)
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-private fun StoryItem() {
-    StoryItem(
-        username = "username",
-        imageUrl = "https://i.pinimg.com/736x/8f/c6/98/8fc6985b7749b5e1c4f6133ce7f2d07a.jpg"
-    )
-}
