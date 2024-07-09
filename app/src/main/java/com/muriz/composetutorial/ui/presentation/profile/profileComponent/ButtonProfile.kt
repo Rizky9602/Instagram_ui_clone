@@ -68,8 +68,3 @@ fun ButtonProfile(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-private fun test() {
-    ButtonProfile()
-}

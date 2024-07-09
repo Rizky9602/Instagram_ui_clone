@@ -63,9 +63,3 @@ fun TopBarProfile(modifier: Modifier = Modifier.padding(top = 5.dp)) {
         }
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-private fun Test() {
-    TopBarProfile()
-}

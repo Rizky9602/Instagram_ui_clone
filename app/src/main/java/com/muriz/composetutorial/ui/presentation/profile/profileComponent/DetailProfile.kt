@@ -50,9 +50,3 @@ fun DetailProfile(modifier: Modifier = Modifier) {
         }
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-private fun test() {
-    DetailProfile()
-}
