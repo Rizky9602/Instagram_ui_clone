@@ -34,7 +34,7 @@ fun DetailProfile(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop,
             modifier = modifier
                 .clip(CircleShape)
-                .size(70.dp)
+                .size(90.dp)
         )
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(text = "1")

@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import com.muriz.composetutorial.ui.presentation.component.BottomBar
 import com.muriz.composetutorial.ui.presentation.navigation.Screen
 import com.muriz.composetutorial.ui.presentation.Home.HomeScreen
+import com.muriz.composetutorial.ui.presentation.profile.ProfileScreen
 import com.muriz.composetutorial.ui.presentation.search.SearchScreen
 import com.muriz.composetutorial.ui.presentation.splash.SplashScreen
 
@@ -40,7 +41,7 @@ fun InstagramClone(
 
             }
             composable(Screen.Profile.router){
-
+                ProfileScreen()
             }
             composable(Screen.Splash.router){
                 SplashScreen(navController = navBarHostController)

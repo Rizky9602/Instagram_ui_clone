@@ -2,10 +2,12 @@ package com.muriz.composetutorial.ui.presentation.profile.profileComponent
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.FormatListBulleted
 import androidx.compose.material.icons.filled.List
@@ -46,6 +48,7 @@ fun TopBarProfile(modifier: Modifier = Modifier.padding(top = 5.dp)) {
             fontSize = 22.sp
         )
         Icon(imageVector = Icons.Outlined.ExpandMore, contentDescription = "ExpandMore Icon")
+        Spacer(modifier = modifier.width(10.dp))
         Row(horizontalArrangement = Arrangement.SpaceAround, modifier = modifier.fillMaxWidth()) {
             Icon(
                 imageVector = Icons.Outlined.AlternateEmail,

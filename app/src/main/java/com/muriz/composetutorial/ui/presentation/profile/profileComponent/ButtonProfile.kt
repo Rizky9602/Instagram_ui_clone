@@ -38,18 +38,28 @@ fun ButtonProfile(modifier: Modifier = Modifier) {
         Button(
             onClick = { /*TODO*/ },
             shape = RoundedCornerShape(7.dp),
-            modifier = modifier.size(width = 165.dp, height = 40.dp),
+            modifier = modifier.size(width = 170.dp, height = 35.dp),
             colors = ButtonDefaults.buttonColors(Color.LightGray)
         ) {
-            Text(text = "Edit Profil", textAlign = TextAlign.Center, fontSize = 18.sp)
+            Text(
+                text = "Edit Profil",
+                textAlign = TextAlign.Center,
+                fontSize = 18.sp,
+                color = Color.Black
+            )
         }
         Button(
             onClick = { /*TODO*/ },
             shape = RoundedCornerShape(7.dp),
-            modifier = modifier.size(width = 165.dp, height = 40.dp),
+            modifier = modifier.size(width = 170.dp, height = 35.dp),
             colors = ButtonDefaults.buttonColors(Color.LightGray)
         ) {
-            Text(text = "Bagikan Profil", textAlign = TextAlign.Center, fontSize = 18.sp)
+            Text(
+                text = "Bagikan Profil",
+                textAlign = TextAlign.Center,
+                fontSize = 18.sp,
+                color = Color.Black
+            )
         }
         Box(
             modifier = modifier

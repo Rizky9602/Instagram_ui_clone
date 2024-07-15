@@ -42,7 +42,7 @@ fun Sorotan(modifier: Modifier = Modifier) {
                 model = "https://i.pinimg.com/736x/41/a9/89/41a9899bfae4142de5f2022e46b386ba.jpg",
                 contentDescription = "YEs",
                 modifier = modifier
-                    .size(50.dp)
+                    .size(70.dp)
                     .clip(
                         CircleShape
                     ).border(1.dp, color = Color.White, shape = CircleShape,),
@@ -54,14 +54,14 @@ fun Sorotan(modifier: Modifier = Modifier) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Box(
                 modifier = modifier
-                    .size(50.dp)
+                    .size(70.dp)
                     .border(BorderStroke(0.5.dp, color = Color.Black), shape = CircleShape),
                 contentAlignment = Alignment.Center
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.add_sorotan),
                     contentDescription = "add sorotan",
-                    modifier = modifier.size(20.dp)
+                    modifier = modifier.size(30.dp)
                 )
             }
 
