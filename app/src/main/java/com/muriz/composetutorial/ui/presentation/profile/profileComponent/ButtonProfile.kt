@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.PersonAdd
 import androidx.compose.material.icons.outlined.PersonAdd
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -18,11 +17,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
+
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.RectangleShape
+
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
+
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -41,12 +40,10 @@ fun ButtonProfile(modifier: Modifier = Modifier) {
             modifier = modifier.size(width = 170.dp, height = 35.dp),
             colors = ButtonDefaults.buttonColors(Color.LightGray)
         ) {
-            Text(
-                text = "Edit Profil",
+            Text(text = "Edit Profil",
                 textAlign = TextAlign.Center,
                 fontSize = 18.sp,
-                color = Color.Black
-            )
+                color = Color.Black)
         }
         Button(
             onClick = { /*TODO*/ },
