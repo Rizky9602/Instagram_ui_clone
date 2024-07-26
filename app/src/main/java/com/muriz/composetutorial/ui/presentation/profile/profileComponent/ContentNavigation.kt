@@ -27,29 +27,39 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
+import com.muriz.composetutorial.ui.presentation.profile.profileComponent.Content.ContentProfile
+
+
 
 @Composable
 fun ContentNavigation(
     modifier: Modifier = Modifier
 
 ) {
+    val contentProfile = ContentProfile()
+
     val tabItems = listOf(
         TabItem(
-            title = "post",
+            content = {contentProfile.Post()},
             unSelectedIcon = Icons.Outlined.Apps,
             selectedIcon = Icons.Filled.Apps
         ),
         TabItem(
-            title = "Reels",
+            content = {contentProfile.Reels()},
             unSelectedIcon = Icons.Outlined.VideoLibrary,
             selectedIcon = Icons.Filled.VideoLibrary
         ),
         TabItem(
-            title = "mention",
+            content = {contentProfile.Tagging()},
             unSelectedIcon = Icons.Outlined.AccountBox,
             selectedIcon = Icons.Filled.AccountBox
         )
     )
+    @Composable
+    fun TabContent(index: Int) {
+        tabItems.getOrNull(index)?.content?.invoke()
+    }
+    
     val pagerState = rememberPagerState {
         tabItems.size
     }
@@ -76,7 +86,7 @@ fun ContentNavigation(
                         Icon(
                             imageVector = if (selectedIndexItem == index) {
                                 item.selectedIcon
-                            } else item.unSelectedIcon, contentDescription = "icon ${item.title}"
+                            } else item.unSelectedIcon, contentDescription = null
                         )
                     }
                 )
@@ -90,7 +100,7 @@ fun ContentNavigation(
             Box(modifier = modifier.fillMaxSize(),
                 contentAlignment = Alignment.TopStart
             ){
-                
+                TabContent(index = selectedIndexItem)
             }
         }
     }
@@ -98,7 +108,7 @@ fun ContentNavigation(
 
 
 data class TabItem(
-    val title: String,
+    val content: @Composable () -> Unit,
     val unSelectedIcon: ImageVector,
     val selectedIcon: ImageVector
 )
