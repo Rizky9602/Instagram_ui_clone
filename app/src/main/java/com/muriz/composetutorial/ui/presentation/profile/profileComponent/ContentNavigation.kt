@@ -56,13 +56,13 @@ fun ContentNavigation(
     var selectedIndexItem by remember {
         mutableIntStateOf(0)
     }
-    LaunchedEffect(selectedIndexItem, pagerState.isScrollInProgress) {
-        if(!pagerState.isScrollInProgress) {
+    LaunchedEffect(selectedIndexItem) {
             pagerState.animateScrollToPage(selectedIndexItem)
-        }
     }
-    LaunchedEffect(pagerState.currentPage) {
-        selectedIndexItem = pagerState.currentPage
+    LaunchedEffect(pagerState.currentPage, pagerState.isScrollInProgress) {
+        if(!pagerState.isScrollInProgress) {
+            selectedIndexItem = pagerState.currentPage
+        }
     }
     Column(modifier = modifier.fillMaxSize()) {
         TabRow(selectedTabIndex = selectedIndexItem) {
