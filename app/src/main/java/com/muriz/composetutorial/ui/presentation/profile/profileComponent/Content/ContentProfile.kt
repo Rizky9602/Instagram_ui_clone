@@ -43,7 +43,15 @@ class ContentProfile {
 
     @Composable
     fun Tagging(modifier: Modifier = Modifier) {
-
+        Row(horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.Top) {
+            AsyncImage(
+                model = "https://i.pinimg.com/736x/41/a9/89/41a9899bfae4142de5f2022e46b386ba.jpg",
+                contentDescription = "image post 1",
+                modifier
+                    .size(130.dp)
+                    .clip(shape = RectangleShape), contentScale = ContentScale.Crop
+            )
+        }
     }
 
     @Preview
